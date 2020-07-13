@@ -6,9 +6,9 @@ namespace Worksheet_5
 {
     public abstract class Food
     {
-
-        public List<string> toppings { get; set; }
-        public int calories { get; set; }
+        //Part 1 - I want Purple Place Cakes
+        public List<string> toppings;
+        public int calories;
 
         protected Food(int value)
         {
@@ -17,9 +17,9 @@ namespace Worksheet_5
 
         }
 
-        public void addTopping(string toppingValue)
+        public void addTopping(string toppingName)
         {
-            toppings.Add(toppingValue);
+            toppings.Add(toppingName);
         }
 
         public override string ToString()
